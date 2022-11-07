@@ -1,0 +1,11 @@
+The homework is an extension of the demo project from the lesson.
+ ⁃ Add a click event to each item in the list (hint: add it to the “holder.binding.root” in onBindViewHolder method of the adapter class)
+ ⁃ When the user taps on an item a request should be made to this endpoint: “https://restcountries.com/v2/name/COUNTRY_NAME_HERE” where “COUNTRY_NAME_HERE” should be replaced with the name of the selected country (ex. https://restcountries.com/v2/name/bulgaria))
+ ⁃ Create another model that will be used to parse the response returned by this request
+ ⁃ you can paste the link in your browser to see the response format
+ ⁃ you can copy the text you will see in your browser and paste it here “http://json.parser.online.fr” in the left field and you will get a more readable format of this response
+ ⁃ The endpoint should be defined in the Service class
+ ⁃ A second method should be added in the Repository class to call this endpoint
+ ⁃ The model for the response should have fields for “name”, “capital”, “flag” (PNG one, not SVG), “region”, “population”, “area”
+ ⁃ Display this information in a second Fragment which should occupy the whole screen (it doesn’t matter how you order the information on the layout file of the fragment)
+ ⁃ The fragment should have a back button that will remove it and return the user on the list of countries
