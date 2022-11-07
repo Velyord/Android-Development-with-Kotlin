@@ -1,0 +1,6 @@
+Iterate all numbers from 2 to 100.
+For each even number increment a counter.
+For each odd number increment a counter.
+For each prime number increment a counter.
+For each found prime number - print it.
+Print the final value of all three counters.
