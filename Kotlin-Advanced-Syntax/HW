@@ -1,0 +1,7 @@
+Write a function that accepts an integer parameter and 2 function params
+One of the functions should be passed as lambda (you should decide which one should it be)
+The other one should be passed as a separate variable
+Call the initial function with each value from 0 to 20
+In case the number is divisible by 3 call the first function, otherwise call the second one
+The first function should evaluate if the passed number is present in the array [2,3,4,5,6,12,13,14,15] by using the lambda “filter” function of the Array class and print the result in the format PASSED NUMBER -> YES/NO
+The second function should find all divisors of this number in the array [0,2,4,6,10,11,12,13] by using the lambda “forEach” function of the Array class and save them in separate array which is printed in the end in the format: PASSED NUMBER -> DIVISORS ARRAY
