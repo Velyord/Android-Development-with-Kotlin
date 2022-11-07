@@ -1,0 +1,17 @@
+Main task:
+ ◦ Create an Activity with а button in it
+ ◦ Using view binding/data binding set click listener to it
+ ◦ The button tap should lead to a new Activity
+ ◦ The title of this Activity should be provided as parameter in the Intent
+ ◦ Display the title in a TextView at the top of the Activity
+ ◦ Add a fragment container under the title down to the bottom of the screen
+ ◦ The fragment container should use a navigation graph XML file for fragment management
+ ◦ The fragment container should have a start destination fragment displayed by default
+ ◦ The navigation graph should include at least 4 Fragments to which the user can navigate and should be one way only (ex. 1 -> 2 -> 3 -> 4 -> 1 -> …)
+ ◦ Each fragment should have a title which is unique among all fragments and a button which leads to the next fragment
+ ◦ This navigation should happen using the generated Direction class for the current fragment and its underlying “action” methods
+ ◦ The button in the last fragment should lead the user back to the starting state of the navigation graph removing all added fragments before that (up to and without the starting one)
+Bonus task (includes R&D):
+ ◦ Add a button between the title of the Activity and the fragment container
+ ◦ Each tap on the button should lead the user to the next Fragment
+ ◦ The next Fragment can be determined based on the current Fragment and the configured actions for this fragment in the navigation graph XML
