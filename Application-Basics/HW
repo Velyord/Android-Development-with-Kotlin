@@ -1,0 +1,13 @@
+Main task:
+ ◦ Add an EditText component and a button wherever you’d like on the screen
+ ◦ Give them IDs and a title for the button
+ ◦ In the MainActivity file reference them via the provided “binding” variable
+ ◦ Attach an action to the button using the lambda “setOnClickListener” method of the View class
+ ◦ The action should take the current input from the EditText and set it as a title of the TextView
+ ◦ After transferring the text to the TextView erase it from the EditText
+Bonus task:
+ ◦ Add a counter that will count the number of times a transfer has been made from the EditText to the TextView
+ ◦ Prepend the current value of the counter to the contents of the EditText before moving them to the TextView (ex. if EditText has “Phrase one” as current content then TextView should show “1. Phrase one” as title after tapping the button)
+ ◦ Add one more button that will be used to reset the counter and clear the contents of both the EditText and TextView
+Bonus task 2:
+ ◦ Add another button that will be used to undo the last transfer (remove text from TextView and set it as content to the EditText) and decrement the counter.
