@@ -1,0 +1,12 @@
+Main task:
+ ◦ Add some images to the application resources
+ ◦ Add a constraint layout to your activity
+ ◦ Add a UI element to display an image (centered horizontally and 30% leaned to top of layout)
+ ◦ Add a text field which will display a counter of the clicks (centered in layout)
+ ◦ Add a button and set a click action to it using the view binding feature (centered horizontally and 30% leaned to bottom of layout)
+ ◦ On every click the counter should be incremented and a random image should be shown to the user
+ ◦ The value of the counter should be presented using the data binding feature and the image should be changed using the view binding feature
+Bonus task:
+ ◦ Remove the counter and in the text field present the name of the current image (includes R&D on how to fetch the name of a resource)
+More bonus tasks:
+ ◦ Will be provided later and will include interactions with motions
