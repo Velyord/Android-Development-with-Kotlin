@@ -1,0 +1,33 @@
+Requirements
+    Create an application that fetches all cryptocurrencies from CoinGecko, shows them to the user in a list and allows opening a details screen with additional         functionalities. Both screens should work with or without internet connection.
+    Both screens should support offline mode. In any case the data presented on the Main Screen or the Cryptocurrency Details Screen should come from the database       and the database should be updated from the CoinGecko API when this is possible. If there is no internet connection available when the app is started a Snackbar     should be shown to inform the user that information might not be up-to-date.
+1. Main Screen
+    The main screen should present to the user a list with all the cryptocurrencies fetched from the API and sorted by market cap and a counter with the number of       cryptocurrencies available above the list. Each list row should show:
+    - the cryptocurrency logo on the left
+    - the name of the cryptocurrency to the right of the logo (bolded, with capitalized first letter only)
+    - and the symbol of the cryptocurrency to the right of the logo (with all letters capitalized)
+    - a label “Price” and the current price with the currency name (USD) under it on the right of the row. After tapping on a row from the list the Cryptocurrency       Details screen should be opened to present more details for the selected cryptocurrency.
+2. Cryptocurrency Details Screen
+    The Cryptocurrency Details Screen should display detailed information for the selected cryptocurrency. It should contain the following data:
+    - Logo (30% width and height on top left of screen)
+    - Name (capital first letter only and bold text, top of screen and to right of logo)
+    - Symbol (capital letters, under the name and to right of logo)
+    - Price (left-aligned)
+    - Market cap (left-aligned)
+    - Highest value for last 24 h (left-aligned, “high_24h”)
+    - Percentage price change for last 24h (right-aligned, “price_change_percentage_24h”, green text if positive, red text if negative)
+    - Percentage market cap change for last 24h (right-aligned, “market_cap_change_percentage_24h”, green text if positive, red text if negative)
+    - Lowest value for last 24 h (right-aligned, “low_24h”)
+    - Each piece of data should have a label above it indicating what data is presented
+    On the top-right corner of the screen you should have a star button (read notes below) which will mark this cryptocurrency as a favourite one. All favourite         cryptocurrencies should be shown on the top of the list before all other cryptocurrencies and again sorted by market cap. Each row of a cryptocurrency from         favourites should have something different in the layout from other rows (up to you if you are going to use different background colour, background alpha, star     icon somewhere on the layout, etc.).
+    Note: The star button in Cryptocurrency Details screen should indicate if the cryptocurrency is liked or not (you can use “@android:drawable/star_big_on” for       liked cryptocurrencies and “@android:drawable/star_big_off” otherwise).
+Frameworks and tools
+    - API to use - https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd
+    - Networking framework for API communication - Retrofit
+    - Local database framework - Room
+Evaluation criteria
+    - Completeness of the implementation - 10 points
+    - Kotlin skills (proper use of Kotlin syntax) - 10 points
+    - Frameworks usage (Retrofit, Room) - 10 points
+    - UI (proper constraints for dynamic UI) - 10 points
+    - Project structure (correct use of MVVM, code formatting and ease of navigation) - 10 points
