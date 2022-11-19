@@ -1,0 +1,20 @@
+Based on the demo project from the “Work with API” lecture for listing countries do the following:
+    Main task
+        • Integrate Room database in the project.
+        • Define the database class, an entity for the Country object fetched from the API and a DAO with functions for the CRUD 
+        (Create, Read, Update, Delete) operations.
+        • After the list of countries is fetched save each country in the database.
+        • Turn off the internet connection of the device (physical or emulator).
+        • On application start add a check for available internet connection (R&D).
+        • In case no internet connection is available retrieve the list of countries from the database and show a Snackbar 
+        informing the user for the missing internet connection and that information might be outdated.
+        • If internet connection is available update the information in the database with the one fetched from the API.
+    Bonus task
+        • Create another entity to keep track of last update time.
+        • Every time the countries are successfully fetched from the API update the last updated date and time.
+        • Add a text element above the list showing the last update time.
+        • Add another text element under the last update time that shows the number of countries in the list.
+    Bonus task 2
+        • Add an animated loading bar that is shown to users during the check for internet connection and the loading of the countries 
+        (either from database or from the API). The loading bar should be shown when starting the application and should disappear 
+        as soon as the countries list is passed to the adapter.
