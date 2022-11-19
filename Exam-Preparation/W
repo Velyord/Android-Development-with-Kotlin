@@ -1,0 +1,42 @@
+Requirements
+  Create an application that fetches all world countries from an API and displays them in a list allowing the user to tap on any 
+  row and be presented with the details of the selected country
+1. Main Screen
+  The main screen should present to the user a list with all the countries fetched sorted alphabetically and a counter with the 
+  number of countries available in the list. Each list row should show the country flag, the name of the country and the capital 
+  of that country. After tapping on a country from the list the Country Details screen should be opened.
+2. Country Details Screen
+  The Country Details Screen should display detailed information for the selected country. It should contain the following data:
+  - flag (60% width on top of screen)
+  - name (capital and bold letters, centered)
+  - capital (centered only)
+  - alpha2Code (left-aligned)
+  - callingCode (left-aligned)
+  - subregion (left-aligned)
+  - population (left-aligned)
+  - area (left-aligned)
+  - currency (code AND name in brackets, left-aligned)
+  - language (name, left-aligned)
+  - Multiline text field on the bottom for user notes (should be disabled by default)
+  On the top-left corner of the screen you should have a “Like” button and on the top-right corner of the screen you should have 
+  an “Edit” button.
+  The “Like” button will mark this country as a favourite country. All favourite countries should be shown on the top of the 
+  countries list before all other countries and again sorted alphabetically. Each row of a country from favourites should have a 
+  something that marks it as favourite (up to you if you are going to use different colour, alpha, star icon somewhere on the 
+  layout, etc.).
+  The “Edit” button will enable the Notes field on the bottom of the screen and will allow the user to add notes for this country. 
+  After tapping the “Edit” button it will be replaced by two buttons - “Save” and “Cancel”.
+  “Save” button will save the user notes in the database in this country model.
+  “Cancel” will clear the notes of the user from the Notes field and disable it again.
+  Tapping on either of the buttons should hide them and display the “Edit” button again.
+Frameworks and tools
+  - API to use - https://restcountries.com/#api-endpoints-v2 (Use the V2 version of the notes and not V3, provided link is anchored 
+  to the V2 endpoints documentation)
+  - Networking framework for API communication - Retrofit
+  - Local database framework - Room
+Evaluation criteria
+  - Completeness of the implementation - 10 points
+  - Kotlin skills (proper use of Kotlin syntax) - 10 points
+  - Frameworks usage (Retrofit, Room) - 10 points
+  - UI (proper constraints for dynamic UI) - 10 points
+  - Project structure (correct use of MVVM, code formatting and ease of navigation) - 10 points
